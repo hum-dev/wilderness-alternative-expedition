@@ -17,7 +17,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 mt-16 leading-tight">
             Discover Your Next
             <span className="block bg-gradient-to-r from-sunset to-sky bg-clip-text text-transparent">
               Adventure
@@ -33,7 +33,7 @@ const Hero = () => {
             <Button variant="hero" size="lg" className="text-lg px-8 py-4">
               Start Your Adventure
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary">
+            <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-white text-black hover:bg-white hover:text-primary">
               View Expeditions
             </Button>
           </div>
@@ -41,11 +41,11 @@ const Hero = () => {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-white/20">
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-sunset">500+</div>
+              <div className="text-3xl md:text-4xl font-bold text-sunset">50+</div>
               <div className="text-white/80">Adventures Completed</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-sky">15+</div>
+              <div className="text-3xl md:text-4xl font-bold text-sky">5+</div>
               <div className="text-white/80">Years Experience</div>
             </div>
             <div>
