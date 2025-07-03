@@ -3,26 +3,45 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import About from "./pages/About";
+import MtKenya from "./pages/MtKenya";
+import Sirimon from "./pages/routes/Sirimon";
+import NaroMoru from "./pages/routes/NaroMoru";
+import Chogoria from "./pages/routes/Chogoria";
+import ChogoriaDown from "./pages/routes/ChogoriaDown";
+import Burguret from "./pages/routes/Burguret";
+import Kamweti from "./pages/routes/Kamweti";
+import Timau from "./pages/routes/Timau";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/about" element={<About />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
+    <HelmetProvider>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/mt-kenya" element={<MtKenya />} />
+            <Route path="/mt-kenya/sirimon" element={<Sirimon />} />
+            <Route path="/mt-kenya/naro-moru" element={<NaroMoru />} />
+            <Route path="/mt-kenya/chogoria" element={<Chogoria />} />
+            <Route path="/mt-kenya/chogoria-down" element={<ChogoriaDown />} />
+            <Route path="/mt-kenya/burguret" element={<Burguret />} />
+            <Route path="/mt-kenya/kamweti" element={<Kamweti />} />
+            <Route path="/mt-kenya/timau" element={<Timau />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </HelmetProvider>
   </QueryClientProvider>
 );
 
