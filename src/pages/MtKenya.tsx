@@ -173,26 +173,25 @@ const MtKenya = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {routesGallery.map((route, index) => (
-                <Card key={index} className="overflow-hidden hover:shadow-adventure transition-all duration-300 group">
-                  <div className="relative overflow-hidden">
-                    <img
-                      src={route.image}
-                      alt={route.name}
-                      className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  </div>
-                  <CardHeader>
-                    <CardTitle className="text-xl text-primary">{route.name}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <CardDescription className="text-base mb-4">
-                      {route.description}
-                    </CardDescription>
-                    <Button variant="adventure" className="w-full" asChild>
-                      <Link to={route.link}>Explore Route</Link>
-                    </Button>
-                  </CardContent>
+                <Card key={index} className="overflow-hidden hover:shadow-adventure transition-all duration-300 group cursor-pointer">
+                  <Link to={route.link}>
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={route.image}
+                        alt={route.name}
+                        className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                    <CardHeader>
+                      <CardTitle className="text-xl text-primary group-hover:text-primary/80 transition-colors">{route.name}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <CardDescription className="text-base">
+                        {route.description}
+                      </CardDescription>
+                    </CardContent>
+                  </Link>
                 </Card>
               ))}
             </div>

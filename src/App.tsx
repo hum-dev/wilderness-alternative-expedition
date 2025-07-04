@@ -7,6 +7,7 @@ import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import MtKenya from "./pages/MtKenya";
+import Kilimanjaro from "./pages/Kilimanjaro";
 import Sirimon from "./pages/routes/Sirimon";
 import NaroMoru from "./pages/routes/NaroMoru";
 import Chogoria from "./pages/routes/Chogoria";
@@ -14,6 +15,11 @@ import ChogoriaDown from "./pages/routes/ChogoriaDown";
 import Burguret from "./pages/routes/Burguret";
 import Kamweti from "./pages/routes/Kamweti";
 import Timau from "./pages/routes/Timau";
+import Lemosho from "./pages/routes/Lemosho";
+import Machame from "./pages/routes/Machame";
+import Marangu from "./pages/routes/Marangu";
+import Rongai from "./pages/routes/Rongai";
+import NorthernCircuit from "./pages/routes/NorthernCircuit";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -36,6 +42,12 @@ const App = () => (
             <Route path="/mt-kenya/burguret" element={<Burguret />} />
             <Route path="/mt-kenya/kamweti" element={<Kamweti />} />
             <Route path="/mt-kenya/timau" element={<Timau />} />
+            <Route path="/kilimanjaro" element={<Kilimanjaro />} />
+            <Route path="/kilimanjaro/lemosho" element={<Lemosho />} />
+            <Route path="/kilimanjaro/machame" element={<Machame />} />
+            <Route path="/kilimanjaro/marangu" element={<Marangu />} />
+            <Route path="/kilimanjaro/rongai" element={<Rongai />} />
+            <Route path="/kilimanjaro/northern-circuit" element={<NorthernCircuit />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
