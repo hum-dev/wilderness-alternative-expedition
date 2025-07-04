@@ -20,6 +20,13 @@ import Machame from "./pages/routes/Machame";
 import Marangu from "./pages/routes/Marangu";
 import Rongai from "./pages/routes/Rongai";
 import NorthernCircuit from "./pages/routes/NorthernCircuit";
+import Safaris from "./pages/Safaris";
+import MaasaiMara from "./pages/safaris/MaasaiMara";
+import Samburu from "./pages/safaris/Samburu";
+import Meru from "./pages/safaris/Meru";
+import Amboseli from "./pages/safaris/Amboseli";
+import OlPejeta from "./pages/safaris/OlPejeta";
+import NairobiPark from "./pages/safaris/NairobiPark";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -48,6 +55,13 @@ const App = () => (
             <Route path="/kilimanjaro/marangu" element={<Marangu />} />
             <Route path="/kilimanjaro/rongai" element={<Rongai />} />
             <Route path="/kilimanjaro/northern-circuit" element={<NorthernCircuit />} />
+            <Route path="/safaris" element={<Safaris />} />
+            <Route path="/safaris/maasai-mara" element={<MaasaiMara />} />
+            <Route path="/safaris/samburu" element={<Samburu />} />
+            <Route path="/safaris/meru" element={<Meru />} />
+            <Route path="/safaris/amboseli" element={<Amboseli />} />
+            <Route path="/safaris/ol-pejeta" element={<OlPejeta />} />
+            <Route path="/safaris/nairobi-park" element={<NairobiPark />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
