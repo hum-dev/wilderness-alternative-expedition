@@ -22,6 +22,8 @@ import Rongai from "./pages/routes/Rongai";
 import NorthernCircuit from "./pages/routes/NorthernCircuit";
 import Safaris from "./pages/Safaris";
 import MaasaiMara from "./pages/safaris/MaasaiMara";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import Samburu from "./pages/safaris/Samburu";
 import Meru from "./pages/safaris/Meru";
 import Amboseli from "./pages/safaris/Amboseli";
@@ -62,6 +64,8 @@ const App = () => (
             <Route path="/safaris/amboseli" element={<Amboseli />} />
             <Route path="/safaris/ol-pejeta" element={<OlPejeta />} />
             <Route path="/safaris/nairobi-park" element={<NairobiPark />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
