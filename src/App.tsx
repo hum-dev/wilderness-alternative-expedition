@@ -24,6 +24,7 @@ import Safaris from "./pages/Safaris";
 import MaasaiMara from "./pages/safaris/MaasaiMara";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import Contact from "./pages/Contact";
 import Samburu from "./pages/safaris/Samburu";
 import Meru from "./pages/safaris/Meru";
 import Amboseli from "./pages/safaris/Amboseli";
@@ -66,6 +67,7 @@ const App = () => (
             <Route path="/safaris/nairobi-park" element={<NairobiPark />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/contact" element={<Contact />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
