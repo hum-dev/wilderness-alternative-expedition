@@ -25,6 +25,7 @@ import MaasaiMara from "./pages/safaris/MaasaiMara";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import Contact from "./pages/Contact";
+import Expeditions from "./pages/Expeditions";
 import Samburu from "./pages/safaris/Samburu";
 import Meru from "./pages/safaris/Meru";
 import Amboseli from "./pages/safaris/Amboseli";
@@ -68,6 +69,7 @@ const App = () => (
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/expeditions" element={<Expeditions />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

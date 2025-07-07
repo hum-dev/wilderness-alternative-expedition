@@ -1,44 +1,45 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 import safariImage from "@/assets/safari-wildlife.jpg";
 import kilimanjaroImage from "@/assets/kilimanjaro-trek.jpg";
 
-const destinations = [
-  {
-    id: "mt-kenya",
-    title: "Mount Kenya",
-    subtitle: "Africa's Second Highest Peak",
-    description: "Challenge yourself on Kenya's most iconic mountain with diverse routes through alpine landscapes and unique wildlife encounters.",
-    image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=600&fit=crop",
-    highlights: ["Point Lenana (4,985m)", "5 Different Routes", "Alpine Wildlife"],
-    duration: "4-6 Days",
-    difficulty: "Moderate to Challenging"
-  },
-  {
-    id: "kilimanjaro",
-    title: "Mount Kilimanjaro",
-    subtitle: "Roof of Africa",
-    description: "Conquer Africa's highest peak through stunning climate zones from rainforest to arctic conditions at the summit.",
-    image: kilimanjaroImage,
-    highlights: ["Uhuru Peak (5,895m)", "7 Different Routes", "No Technical Climbing"],
-    duration: "5-9 Days",
-    difficulty: "Moderate"
-  },
-  {
-    id: "safaris",
-    title: "Wildlife Safaris",
-    subtitle: "Big Five Adventures",
-    description: "Experience Kenya's world-renowned wildlife in their natural habitat across multiple national parks and conservancies.",
-    image: safariImage,
-    highlights: ["Big Five Sightings", "Great Migration", "Cultural Experiences"],
-    duration: "3-14 Days",
-    difficulty: "Easy"
-  }
-];
-
 const FeaturedDestinations = () => {
+  const destinations = [
+    {
+      id: "mt-kenya",
+      title: "Mount Kenya",
+      subtitle: "Africa's Second Highest Peak",
+      description: "Challenge yourself on Kenya's most iconic mountain with diverse routes through alpine landscapes and unique wildlife encounters.",
+      image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=600&fit=crop",
+      highlights: ["Point Lenana (4,985m)", "5 Different Routes", "Alpine Wildlife"],
+      duration: "4-6 Days",
+      difficulty: "Moderate to Challenging"
+    },
+    {
+      id: "kilimanjaro",
+      title: "Mount Kilimanjaro",
+      subtitle: "Roof of Africa",
+      description: "Conquer Africa's highest peak through stunning climate zones from rainforest to arctic conditions at the summit.",
+      image: kilimanjaroImage,
+      highlights: ["Uhuru Peak (5,895m)", "7 Different Routes", "No Technical Climbing"],
+      duration: "5-9 Days",
+      difficulty: "Moderate"
+    },
+    {
+      id: "safaris",
+      title: "Wildlife Safaris",
+      subtitle: "Big Five Adventures",
+      description: "Experience Kenya's world-renowned wildlife in their natural habitat across multiple national parks and conservancies.",
+      image: safariImage,
+      highlights: ["Big Five Sightings", "Great Migration", "Cultural Experiences"],
+      duration: "3-14 Days",
+      difficulty: "Easy"
+    }
+  ];
+
   return (
-    <section className="py-24 bg-gradient-to-b from-background to-muted">
+    <section id="featured-expeditions" className="py-24 bg-gradient-to-b from-background to-muted">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
@@ -83,9 +84,9 @@ const FeaturedDestinations = () => {
                   <div>
                     <div className="text-sm text-muted-foreground mb-2">Highlights:</div>
                     <div className="flex flex-wrap gap-2">
-                      {destination.highlights.map((highlight) => (
+                      {destination.highlights.map((highlight, index) => (
                         <span
-                          key={highlight}
+                          key={index}
                           className="text-xs bg-forest/10 text-forest px-2 py-1 rounded-full"
                         >
                           {highlight}
@@ -95,8 +96,10 @@ const FeaturedDestinations = () => {
                   </div>
                 </div>
                 
-                <Button variant="adventure" className="w-full">
-                  Learn More
+                <Button asChild variant="adventure" className="w-full">
+                  <Link to={`/${destination.id}`}>
+                    Learn More
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -104,8 +107,10 @@ const FeaturedDestinations = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="mountain" size="lg">
-            View All Expeditions
+          <Button asChild variant="mountain" size="lg">
+            <Link to="/expeditions">
+              View All Expeditions
+            </Link>
           </Button>
         </div>
       </div>

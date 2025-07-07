@@ -10,6 +10,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Helmet } from "react-helmet-async";
 import { Phone, Mail, Instagram, Facebook } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
@@ -66,6 +67,7 @@ Message: ${data.message || 'No additional message'}
       description: "Please send the email from your email client to complete your booking inquiry.",
     });
     
+    form.reset();
     setIsSubmitting(false);
   };
 
@@ -360,6 +362,78 @@ Message: ${data.message || 'No additional message'}
                   </CardContent>
                 </Card>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 bg-muted/50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                  Frequently Asked Questions
+                </h2>
+                <p className="text-lg text-muted-foreground">
+                  Get answers to common questions about our expeditions and services.
+                </p>
+              </div>
+
+              <Accordion type="single" collapsible className="space-y-4">
+                <AccordionItem value="item-1" className="border border-border rounded-lg px-6">
+                  <AccordionTrigger className="text-left">
+                    What is included in the expedition packages?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Our expedition packages include professional guides, camping equipment, meals during the trek, park fees, transportation to/from the trailhead, and safety equipment. Accommodation before and after the trek can be arranged separately.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-2" className="border border-border rounded-lg px-6">
+                  <AccordionTrigger className="text-left">
+                    What fitness level is required for Mount Kenya and Kilimanjaro?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    A good level of fitness is recommended. Regular cardio exercise, hiking experience, and endurance training 2-3 months before your expedition will help ensure a successful and enjoyable climb. We provide detailed preparation guides upon booking.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-3" className="border border-border rounded-lg px-6">
+                  <AccordionTrigger className="text-left">
+                    What is the best time to visit for trekking and safaris?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    For trekking: January-March and June-October offer the best weather conditions. For safaris: July-October (Great Migration) and January-March (calving season) provide excellent wildlife viewing opportunities.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-4" className="border border-border rounded-lg px-6">
+                  <AccordionTrigger className="text-left">
+                    Do you provide equipment or do I need to bring my own?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    We provide all camping equipment including tents, sleeping bags, and cooking gear. You'll need to bring personal items like hiking boots, warm clothing, and rain gear. We provide a detailed packing list upon booking.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-5" className="border border-border rounded-lg px-6">
+                  <AccordionTrigger className="text-left">
+                    What about altitude sickness and safety measures?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Our guides are trained in wilderness first aid and altitude sickness recognition. We follow proper acclimatization schedules, carry first aid equipment, and have emergency evacuation procedures in place. Pre-trek briefings cover altitude sickness prevention and symptoms.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-6" className="border border-border rounded-lg px-6">
+                  <AccordionTrigger className="text-left">
+                    Can you accommodate dietary restrictions and special needs?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Yes, we can accommodate most dietary restrictions including vegetarian, vegan, gluten-free, and other special dietary needs. Please inform us of any requirements when booking so we can prepare accordingly.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </div>
           </div>
         </section>

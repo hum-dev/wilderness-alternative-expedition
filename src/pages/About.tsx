@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const [showFullDescription, setShowFullDescription] = useState(false);
@@ -160,7 +161,8 @@ const About = () => {
               </p>
               <div className="mt-8">
                 <Button variant="adventure" size="lg">
-                  Start Your Adventure
+                  <Link to="/contact">Start Your Adventure</Link>
+                  
                 </Button>
               </div>
             </div>

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -28,15 +29,18 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <nav className="space-y-2">
-              {["Home", "About Us", "Expeditions", "Blog", "Gallery", "Contact"].map((link) => (
-                <a
-                  key={link}
-                  href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}
-                  className="block text-primary-foreground/80 hover:text-white transition-colors duration-200"
-                >
-                  {link}
-                </a>
-              ))}
+              <Link to="/" className="block text-primary-foreground/80 hover:text-white transition-colors duration-200">
+                Home
+              </Link>
+              <Link to="/about" className="block text-primary-foreground/80 hover:text-white transition-colors duration-200">
+                About Us
+              </Link>
+              <Link to="/blog" className="block text-primary-foreground/80 hover:text-white transition-colors duration-200">
+                Blog
+              </Link>
+              <Link to="/contact" className="block text-primary-foreground/80 hover:text-white transition-colors duration-200">
+                Contact
+              </Link>
             </nav>
           </div>
 
@@ -44,15 +48,15 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Expeditions</h4>
             <nav className="space-y-2">
-              {["Mount Kenya", "Kilimanjaro", "Kenya Safaris", "Tanzania Safaris", "Cultural Tours", "Day Trips"].map((expedition) => (
-                <a
-                  key={expedition}
-                  href={`#${expedition.toLowerCase().replace(/\s+/g, '-')}`}
-                  className="block text-primary-foreground/80 hover:text-white transition-colors duration-200"
-                >
-                  {expedition}
-                </a>
-              ))}
+              <Link to="/mt-kenya" className="block text-primary-foreground/80 hover:text-white transition-colors duration-200">
+                Mount Kenya
+              </Link>
+              <Link to="/kilimanjaro" className="block text-primary-foreground/80 hover:text-white transition-colors duration-200">
+                Kilimanjaro
+              </Link>
+              <Link to="/safaris" className="block text-primary-foreground/80 hover:text-white transition-colors duration-200">
+                Kenya Safaris
+              </Link>
             </nav>
           </div>
 

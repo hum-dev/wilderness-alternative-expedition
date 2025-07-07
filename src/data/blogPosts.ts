@@ -16,66 +16,71 @@ export const blogPosts: BlogPost[] = [
     title: "The Ultimate Kilimanjaro Packing Guide: What to Bring for Your Summit",
     excerpt: "Everything you need to know about packing for Kilimanjaro, from essential gear to helpful extras. A comprehensive guide based on years of guiding experience.",
     content: `
-# The Ultimate Kilimanjaro Packing Guide
-
-Packing for Kilimanjaro can seem overwhelming, but with the right preparation, you'll be ready for anything the mountain throws at you.
-
-## Essential Clothing Layers
-
-The key to staying comfortable on Kilimanjaro is layering. You'll experience everything from tropical heat to arctic conditions.
-
-### Base Layers
-- Moisture-wicking synthetic or merino wool shirts
-- Thermal underwear for summit night
-- Quick-dry hiking pants
-
-### Insulation Layer
-- Fleece or down jacket
-- Insulated pants for summit attempt
-
-### Outer Shell
-- Waterproof, breathable jacket
-- Waterproof pants
-
-## Footwear
-
-Your feet will carry you to the roof of Africa, so invest in quality footwear:
-
-- Sturdy hiking boots (broken in!)
-- Gaiters to keep debris out
-- Camp shoes for evening comfort
-- Quality hiking socks (wool or synthetic)
-
-## Sleeping System
-
-Nights on Kilimanjaro can be brutally cold:
-
-- Sleeping bag rated to -10°C/14°F minimum
-- Insulated sleeping pad
-- Pillow or inflatable pillow
-
-## Navigation and Safety
-
-- Headlamp with extra batteries
-- GPS device or smartphone with offline maps
-- First aid kit
-- Water purification tablets
-
-## Personal Care
-
-- Sunscreen (high SPF)
-- Sunglasses
-- Lip balm with SPF
-- Personal medications
-- Toiletries in small containers
-
-## Final Tips
-
-> "The best gear is the gear you're comfortable with. Test everything at home first." - Our Lead Guide
-
-Remember, porters will carry most of your gear, but you'll need a day pack with essentials for each day's trek.
-
-Pack smart, trek safely, and enjoy the adventure of a lifetime!
+      <h1>The Ultimate Kilimanjaro Packing Guide</h1>
+      <p>Packing for Kilimanjaro can seem overwhelming, but with the right preparation, you'll be ready for anything the mountain throws at you.</p>
+      
+      <h2>Essential Clothing Layers</h2>
+      <p>The key to staying comfortable on Kilimanjaro is layering. You'll experience everything from tropical heat to arctic conditions.</p>
+      
+      <h3>Base Layers</h3>
+      <ul>
+        <li>Moisture-wicking synthetic or merino wool shirts</li>
+        <li>Thermal underwear for summit night</li>
+        <li>Quick-dry hiking pants</li>
+      </ul>
+      
+      <h3>Insulation Layer</h3>
+      <ul>
+        <li>Fleece or down jacket</li>
+        <li>Insulated pants for summit attempt</li>
+      </ul>
+      
+      <h3>Outer Shell</h3>
+      <ul>
+        <li>Waterproof, breathable jacket</li>
+        <li>Waterproof pants</li>
+      </ul>
+      
+      <h2>Footwear</h2>
+      <p>Your feet will carry you to the roof of Africa, so invest in quality footwear:</p>
+      <ul>
+        <li>Sturdy hiking boots (broken in!)</li>
+        <li>Gaiters to keep debris out</li>
+        <li>Camp shoes for evening comfort</li>
+        <li>Quality hiking socks (wool or synthetic)</li>
+      </ul>
+      
+      <h2>Sleeping System</h2>
+      <p>Nights on Kilimanjaro can be brutally cold:</p>
+      <ul>
+        <li>Sleeping bag rated to -10°C/14°F minimum</li>
+        <li>Insulated sleeping pad</li>
+        <li>Pillow or inflatable pillow</li>
+      </ul>
+      
+      <h2>Navigation and Safety</h2>
+      <ul>
+        <li>Headlamp with extra batteries</li>
+        <li>GPS device or smartphone with offline maps</li>
+        <li>First aid kit</li>
+        <li>Water purification tablets</li>
+      </ul>
+      
+      <h2>Personal Care</h2>
+      <ul>
+        <li>Sunscreen (high SPF)</li>
+        <li>Sunglasses</li>
+        <li>Lip balm with SPF</li>
+        <li>Personal medications</li>
+        <li>Toiletries in small containers</li>
+      </ul>
+      
+      <h2>Final Tips</h2>
+      <blockquote>
+        <p>"The best gear is the gear you're comfortable with. Test everything at home first." - Our Lead Guide</p>
+      </blockquote>
+      <p>Remember, porters will carry most of your gear, but you'll need a day pack with essentials for each day's trek.</p>
+      <p>Pack smart, trek safely, and enjoy the adventure of a lifetime!</p>
     `,
     featuredImage: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
     tags: ["Kilimanjaro", "Packing Lists", "Trekking", "Tips"],
@@ -88,54 +93,58 @@ Pack smart, trek safely, and enjoy the adventure of a lifetime!
     title: "Unexpected Wildlife Encounters on Mount Kenya",
     excerpt: "From elephants at the treeline to rare bird species in the alpine zone, Mount Kenya offers surprising wildlife encounters at every elevation.",
     content: `
-# Unexpected Wildlife Encounters on Mount Kenya
-
-Mount Kenya isn't just about reaching Point Lenana—it's about the incredible wildlife you'll encounter along the way.
-
-## Forest Zone Wildlife
-
-The lower slopes of Mount Kenya are teeming with life:
-
-### Large Mammals
-- Forest elephants crossing ancient trails
-- Buffalo herds in bamboo groves
-- Spotted hyenas calling in the night
-
-### Primates
-- Black and white colobus monkeys
-- Blue monkeys foraging in troops
-- Sykes' monkeys near camp areas
-
-## Moorland Discoveries
-
-As you ascend into the heath and moorland zones, the wildlife changes dramatically:
-
-- Rock hyrax sunning on granite outcrops
-- Eland, Africa's largest antelope
-- Defassa waterbuck near streams
-
-## Alpine Zone Surprises
-
-Even at high altitude, life persists:
-
-### Birds of the Heights
-- Lammergeier (bearded vulture) soaring overhead
-- Alpine chat flitting between rocks
-- Scarlet-tufted malachite sunbird
-
-### Small Mammals
-- Four-striped grass mouse
-- Harsh-furred mouse adapted to thin air
-
-## Photography Tips
-
-> "The best wildlife photos happen when you least expect them. Always have your camera ready." - Wildlife Photographer, Jane Wanjiku
-
-## Conservation Notes
-
-Mount Kenya's wildlife faces challenges from climate change and human encroachment. Every trek contributes to conservation efforts through park fees.
-
-The mountain's ecosystems are fragile and precious—treat them with respect, and they'll reward you with unforgettable encounters.
+      <h1>Unexpected Wildlife Encounters on Mount Kenya</h1>
+      <p>Mount Kenya isn't just about reaching Point Lenana—it's about the incredible wildlife you'll encounter along the way.</p>
+      
+      <h2>Forest Zone Wildlife</h2>
+      <p>The lower slopes of Mount Kenya are teeming with life:</p>
+      
+      <h3>Large Mammals</h3>
+      <ul>
+        <li>Forest elephants crossing ancient trails</li>
+        <li>Buffalo herds in bamboo groves</li>
+        <li>Spotted hyenas calling in the night</li>
+      </ul>
+      
+      <h3>Primates</h3>
+      <ul>
+        <li>Black and white colobus monkeys</li>
+        <li>Blue monkeys foraging in troops</li>
+        <li>Sykes' monkeys near camp areas</li>
+      </ul>
+      
+      <h2>Moorland Discoveries</h2>
+      <p>As you ascend into the heath and moorland zones, the wildlife changes dramatically:</p>
+      <ul>
+        <li>Rock hyrax sunning on granite outcrops</li>
+        <li>Eland, Africa's largest antelope</li>
+        <li>Defassa waterbuck near streams</li>
+      </ul>
+      
+      <h2>Alpine Zone Surprises</h2>
+      <p>Even at high altitude, life persists:</p>
+      
+      <h3>Birds of the Heights</h3>
+      <ul>
+        <li>Lammergeier (bearded vulture) soaring overhead</li>
+        <li>Alpine chat flitting between rocks</li>
+        <li>Scarlet-tufted malachite sunbird</li>
+      </ul>
+      
+      <h3>Small Mammals</h3>
+      <ul>
+        <li>Four-striped grass mouse</li>
+        <li>Harsh-furred mouse adapted to thin air</li>
+      </ul>
+      
+      <h2>Photography Tips</h2>
+      <blockquote>
+        <p>"The best wildlife photos happen when you least expect them. Always have your camera ready." - Wildlife Photographer, Jane Wanjiku</p>
+      </blockquote>
+      
+      <h2>Conservation Notes</h2>
+      <p>Mount Kenya's wildlife faces challenges from climate change and human encroachment. Every trek contributes to conservation efforts through park fees.</p>
+      <p>The mountain's ecosystems are fragile and precious—treat them with respect, and they'll reward you with unforgettable encounters.</p>
     `,
     featuredImage: "https://images.unsplash.com/photo-1549366021-9f761d040ed2?w=800&h=600&fit=crop",
     tags: ["Mt. Kenya", "Wildlife", "Trekking", "Photography"],
@@ -148,75 +157,91 @@ The mountain's ecosystems are fragile and precious—treat them with respect, an
     title: "Witnessing the Great Migration: A Maasai Mara Guide",
     excerpt: "The Great Migration is one of nature's most spectacular events. Here's everything you need to know about timing your visit to witness this incredible phenomenon.",
     content: `
-# Witnessing the Great Migration: A Maasai Mara Guide
-
-The Great Migration is nature's most spectacular show—over two million wildebeest, zebras, and gazelles moving in an ancient pattern across the Serengeti-Mara ecosystem.
-
-## Understanding the Migration
-
-The Great Migration follows a roughly circular route:
-
-### January - March: Calving Season
-- Southern Serengeti and Ndutu area
-- Over 500,000 calves born
-- Predators follow the herds
-
-### April - June: Moving North
-- Herds move through central Serengeti
-- River crossings begin
-
-### July - October: Maasai Mara Season
-- Peak time for Mara River crossings
-- Highest concentration in the Mara
-- **Best time to visit Maasai Mara**
-
-### November - December: Return South
-- Herds move back to Serengeti
-- Short rains begin
-
-## The Drama of River Crossings
-
-The Mara River crossings are the most dramatic part of the migration:
-
-### What to Expect
-- Thousands of animals crossing simultaneously
-- Crocodiles waiting in the water
-- Panic, chaos, and raw survival instincts
-
-### Best Viewing Spots
-- Sand River Gate area
-- Paradise Crossing
-- Lookout Hill crossing
-
-## Photography Tips
-
-> "Patience is key. The animals cross when they're ready, not when we want them to." - Safari Guide, Joseph Kimani
-
-### Camera Settings
-- Fast shutter speed for action shots
-- Continuous autofocus mode
-- Burst mode for crossing sequences
-
-## Planning Your Safari
-
-### Accommodation
-- Book early - peak season fills up fast
-- Consider mobile camps that follow the herds
-- Balance location with comfort needs
-
-### Game Drives
-- Early morning drives catch the best action
-- Late afternoon light is perfect for photography
-- Full-day drives maximize your chances
-
-## Beyond the Migration
-
-The Maasai Mara offers incredible wildlife year-round:
-- Big cat populations remain stable
-- Resident wildlife provides consistent viewing
-- Cultural interactions with Maasai communities
-
-The Great Migration is a privilege to witness—a reminder of nature's power and the importance of conservation.
+      <h1>Witnessing the Great Migration: A Maasai Mara Guide</h1>
+      <p>The Great Migration is nature's most spectacular show—over two million wildebeest, zebras, and gazelles moving in an ancient pattern across the Serengeti-Mara ecosystem.</p>
+      
+      <h2>Understanding the Migration</h2>
+      <p>The Great Migration follows a roughly circular route:</p>
+      
+      <h3>January - March: Calving Season</h3>
+      <ul>
+        <li>Southern Serengeti and Ndutu area</li>
+        <li>Over 500,000 calves born</li>
+        <li>Predators follow the herds</li>
+      </ul>
+      
+      <h3>April - June: Moving North</h3>
+      <ul>
+        <li>Herds move through central Serengeti</li>
+        <li>River crossings begin</li>
+      </ul>
+      
+      <h3>July - October: Maasai Mara Season</h3>
+      <ul>
+        <li>Peak time for Mara River crossings</li>
+        <li>Highest concentration in the Mara</li>
+        <li><strong>Best time to visit Maasai Mara</strong></li>
+      </ul>
+      
+      <h3>November - December: Return South</h3>
+      <ul>
+        <li>Herds move back to Serengeti</li>
+        <li>Short rains begin</li>
+      </ul>
+      
+      <h2>The Drama of River Crossings</h2>
+      <p>The Mara River crossings are the most dramatic part of the migration:</p>
+      
+      <h3>What to Expect</h3>
+      <ul>
+        <li>Thousands of animals crossing simultaneously</li>
+        <li>Crocodiles waiting in the water</li>
+        <li>Panic, chaos, and raw survival instincts</li>
+      </ul>
+      
+      <h3>Best Viewing Spots</h3>
+      <ul>
+        <li>Sand River Gate area</li>
+        <li>Paradise Crossing</li>
+        <li>Lookout Hill crossing</li>
+      </ul>
+      
+      <h2>Photography Tips</h2>
+      <blockquote>
+        <p>"Patience is key. The animals cross when they're ready, not when we want them to." - Safari Guide, Joseph Kimani</p>
+      </blockquote>
+      
+      <h3>Camera Settings</h3>
+      <ul>
+        <li>Fast shutter speed for action shots</li>
+        <li>Continuous autofocus mode</li>
+        <li>Burst mode for crossing sequences</li>
+      </ul>
+      
+      <h2>Planning Your Safari</h2>
+      
+      <h3>Accommodation</h3>
+      <ul>
+        <li>Book early - peak season fills up fast</li>
+        <li>Consider mobile camps that follow the herds</li>
+        <li>Balance location with comfort needs</li>
+      </ul>
+      
+      <h3>Game Drives</h3>
+      <ul>
+        <li>Early morning drives catch the best action</li>
+        <li>Late afternoon light is perfect for photography</li>
+        <li>Full-day drives maximize your chances</li>
+      </ul>
+      
+      <h2>Beyond the Migration</h2>
+      <p>The Maasai Mara offers incredible wildlife year-round:</p>
+      <ul>
+        <li>Big cat populations remain stable</li>
+        <li>Resident wildlife provides consistent viewing</li>
+        <li>Cultural interactions with Maasai communities</li>
+      </ul>
+      <p>The Great Migration is a privilege to witness—a reminder of nature's power and the importance of conservation.</p>
     `,
     featuredImage: "https://images.unsplash.com/photo-1493962853295-0fd70327578a?w=800&h=600&fit=crop",
     tags: ["Maasai Mara", "Safari", "Wildlife", "Migration"],
@@ -229,101 +254,122 @@ The Great Migration is a privilege to witness—a reminder of nature's power and
     title: "Mastering Altitude: Essential Acclimatization Tips for High-Altitude Trekking",
     excerpt: "Learn how to prepare your body for high-altitude adventures and recognize the signs of altitude sickness. Essential knowledge for every mountain trekker.",
     content: `
-# Mastering Altitude: Essential Acclimatization Tips
-
-Altitude sickness can turn a dream trek into a nightmare. Here's how to prepare your body and mind for high-altitude adventures.
-
-## Understanding Altitude Effects
-
-As you ascend, the air becomes thinner and oxygen levels drop:
-
-- **1,500-3,500m**: Mild effects possible
-- **3,500-5,500m**: Moderate altitude - acclimatization crucial
-- **Above 5,500m**: Extreme altitude - serious preparation needed
-
-## Pre-Trek Preparation
-
-### Physical Conditioning
-- Cardiovascular fitness is key
-- Focus on endurance over strength
-- Include hill walking in training
-
-### Gradual Exposure
-- Spend time at moderate altitudes before your trek
-- Consider arriving in Nairobi a few days early
-- Take day hikes to higher elevations
-
-## The Golden Rules
-
-### Rule #1: Ascend Slowly
-> "Climb high, sleep low" - The mountaineer's mantra
-
-### Rule #2: Listen to Your Body
-- Headaches are normal, severe headaches are not
-- Nausea and fatigue should improve with rest
-- Never ignore symptoms
-
-### Rule #3: Stay Hydrated
-- Drink 3-4 liters of water daily
-- Avoid alcohol and excessive caffeine
-- Monitor urine color (should be light yellow)
-
-## Recognizing Altitude Sickness
-
-### Mild Symptoms (Normal)
-- Slight headache
-- Mild nausea
-- Fatigue
-- Difficulty sleeping
-
-### Serious Symptoms (Descend Immediately)
-- Severe headache unrelieved by medication
-- Vomiting
-- Loss of coordination
-- Confusion
-
-## Acclimatization Strategies
-
-### Rest Days
-- Build in acclimatization days
-- Take short hikes to higher elevations
-- Return to sleep at lower elevation
-
-### Proper Nutrition
-- Eat carbohydrate-rich foods
-- Maintain regular meal schedule
-- Avoid heavy, fatty meals
-
-## Medication Options
-
-### Preventive Medications
-- Acetazolamide (Diamox) - consult your doctor
-- Start taking 1-2 days before ascent
-- Continue until descent begins
-
-### Symptomatic Relief
-- Ibuprofen for headaches
-- Anti-nausea medication
-- Always carry a comprehensive first aid kit
-
-## Mental Preparation
-
-High altitude affects decision-making and mood:
-
-- Stay positive and flexible
-- Trust your guides' experience
-- Be prepared to turn back if necessary
-
-## Recovery and Descent
-
-If symptoms occur:
-
-1. Stop ascending immediately
-2. Rest and hydrate
-3. If symptoms persist or worsen, descend
-4. Seek medical attention if severe
-
-Remember: Mountains will always be there, but you only have one life. Make smart decisions and enjoy the journey safely.
+      <h1>Mastering Altitude: Essential Acclimatization Tips</h1>
+      <p>Altitude sickness can turn a dream trek into a nightmare. Here's how to prepare your body and mind for high-altitude adventures.</p>
+      
+      <h2>Understanding Altitude Effects</h2>
+      <p>As you ascend, the air becomes thinner and oxygen levels drop:</p>
+      <ul>
+        <li><strong>1,500-3,500m</strong>: Mild effects possible</li>
+        <li><strong>3,500-5,500m</strong>: Moderate altitude - acclimatization crucial</li>
+        <li><strong>Above 5,500m</strong>: Extreme altitude - serious preparation needed</li>
+      </ul>
+      
+      <h2>Pre-Trek Preparation</h2>
+      
+      <h3>Physical Conditioning</h3>
+      <ul>
+        <li>Cardiovascular fitness is key</li>
+        <li>Focus on endurance over strength</li>
+        <li>Include hill walking in training</li>
+      </ul>
+      
+      <h3>Gradual Exposure</h3>
+      <ul>
+        <li>Spend time at moderate altitudes before your trek</li>
+        <li>Consider arriving in Nairobi a few days early</li>
+        <li>Take day hikes to higher elevations</li>
+      </ul>
+      
+      <h2>The Golden Rules</h2>
+      
+      <h3>Rule #1: Ascend Slowly</h3>
+      <blockquote>
+        <p>"Climb high, sleep low" - The mountaineer's mantra</p>
+      </blockquote>
+      
+      <h3>Rule #2: Listen to Your Body</h3>
+      <ul>
+        <li>Headaches are normal, severe headaches are not</li>
+        <li>Nausea and fatigue should improve with rest</li>
+        <li>Never ignore symptoms</li>
+      </ul>
+      
+      <h3>Rule #3: Stay Hydrated</h3>
+      <ul>
+        <li>Drink 3-4 liters of water daily</li>
+        <li>Avoid alcohol and excessive caffeine</li>
+        <li>Monitor urine color (should be light yellow)</li>
+      </ul>
+      
+      <h2>Recognizing Altitude Sickness</h2>
+      
+      <h3>Mild Symptoms (Normal)</h3>
+      <ul>
+        <li>Slight headache</li>
+        <li>Mild nausea</li>
+        <li>Fatigue</li>
+        <li>Difficulty sleeping</li>
+      </ul>
+      
+      <h3>Serious Symptoms (Descend Immediately)</h3>
+      <ul>
+        <li>Severe headache unrelieved by medication</li>
+        <li>Vomiting</li>
+        <li>Loss of coordination</li>
+        <li>Confusion</li>
+      </ul>
+      
+      <h2>Acclimatization Strategies</h2>
+      
+      <h3>Rest Days</h3>
+      <ul>
+        <li>Build in acclimatization days</li>
+        <li>Take short hikes to higher elevations</li>
+        <li>Return to sleep at lower elevation</li>
+      </ul>
+      
+      <h3>Proper Nutrition</h3>
+      <ul>
+        <li>Eat carbohydrate-rich foods</li>
+        <li>Maintain regular meal schedule</li>
+        <li>Avoid heavy, fatty meals</li>
+      </ul>
+      
+      <h2>Medication Options</h2>
+      
+      <h3>Preventive Medications</h3>
+      <ul>
+        <li>Acetazolamide (Diamox) - consult your doctor</li>
+        <li>Start taking 1-2 days before ascent</li>
+        <li>Continue until descent begins</li>
+      </ul>
+      
+      <h3>Symptomatic Relief</h3>
+      <ul>
+        <li>Ibuprofen for headaches</li>
+        <li>Anti-nausea medication</li>
+        <li>Always carry a comprehensive first aid kit</li>
+      </ul>
+      
+      <h2>Mental Preparation</h2>
+      <p>High altitude affects decision-making and mood:</p>
+      <ul>
+        <li>Stay positive and flexible</li>
+        <li>Trust your guides' experience</li>
+        <li>Be prepared to turn back if necessary</li>
+      </ul>
+      
+      <h2>Recovery and Descent</h2>
+      <p>If symptoms occur:</p>
+      <ol>
+        <li>Stop ascending immediately</li>
+        <li>Rest and hydrate</li>
+        <li>If symptoms persist or worsen, descend</li>
+        <li>Seek medical attention if severe</li>
+      </ol>
+      
+      <p>Remember: Mountains will always be there, but you only have one life. Make smart decisions and enjoy the journey safely.</p>
     `,
     featuredImage: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
     tags: ["Trekking", "Tips", "Mt. Kenya", "Kilimanjaro"],
@@ -336,133 +382,173 @@ Remember: Mountains will always be there, but you only have one life. Make smart
     title: "Photography Safari in Samburu: Capturing Kenya's Hidden Gem",
     excerpt: "Samburu offers unique photographic opportunities with its rare species and dramatic landscapes. Here's how to make the most of your photography safari.",
     content: `
-# Photography Safari in Samburu: Capturing Kenya's Hidden Gem
-
-Samburu National Reserve offers photographers something special—rare species, dramatic landscapes, and fewer crowds than other famous parks.
-
-## The Samburu Special Five
-
-These endemic species make Samburu a photographer's paradise:
-
-### Grevy's Zebra
-- Larger than common zebras
-- Narrower stripes, white belly
-- Photograph against red earth for stunning contrast
-
-### Reticulated Giraffe
-- Distinct geometric pattern
-- Beautiful against acacia trees
-- Best shots during golden hour
-
-### Somali Ostrich
-- Blue legs and neck (males)
-- Different from common ostrich
-- Great for behavioral shots
-
-### Beisa Oryx
-- Magnificent horns and markings
-- Often found in open areas
-- Excellent for silhouettes
-
-### Gerenuk
-- "Giraffe-necked gazelle"
-- Stands on hind legs to feed
-- Capture this unique behavior
-
-## Best Photography Locations
-
-### Ewaso Nyiro River
-- Wildlife congregates here
-- Reflections in still water
-- Crocodiles and hippos
-
-### Buffalo Springs
-- Natural spring attracts animals
-- Lush vegetation contrast
-- Early morning visits best
-
-### Konorit Hills
-- Panoramic landscape shots
-- Sunrise and sunset photography
-- Rock formations and vistas
-
-## Technical Tips
-
-### Camera Settings
-- Shoot in manual mode for consistent exposure
-- Fast shutter speeds for action (1/500s or faster)
-- Aperture f/5.6-f/8 for sharp subjects
-
-### Lighting Considerations
-- Golden hour: 30 minutes after sunrise, before sunset
-- Overcast days provide even lighting
-- Avoid harsh midday sun
-
-### Composition Techniques
-- Rule of thirds for wildlife placement
-- Leading lines with river bends
-- Frame subjects with tree branches
-
-## Equipment Recommendations
-
-### Essential Gear
-- 70-200mm lens minimum
-- 400mm+ for distant subjects
-- Sturdy tripod for low light
-- Extra batteries (cold drains power)
-
-### Protection
-- Dust covers for equipment
-- Lens cleaning kit
-- Waterproof bags
-
-## Behavioral Photography
-
-### Patience Pays Off
-> "The best wildlife photos happen when you wait for the story to unfold." - Professional Safari Photographer
-
-### Story-Telling Shots
-- Animal interactions
-- Feeding behaviors
-- Environmental context
-
-## Ethical Photography
-
-### Respect Wildlife
-- Maintain safe distances
-- Never disturb animals for photos
-- Follow guide instructions
-
-### Cultural Sensitivity
-- Ask permission before photographing people
-- Respect local customs
-- Consider giving copies to subjects
-
-## Post-Processing Tips
-
-### RAW Files
-- Always shoot in RAW format
-- Greater flexibility in editing
-- Better shadow/highlight recovery
-
-### Key Adjustments
-- Enhance natural colors subtly
-- Sharpen eyes in wildlife portraits
-- Adjust exposure for dramatic skies
-
-## Best Times to Visit
-
-### Dry Season (June-October)
-- Animals concentrate near water
-- Clearer skies for photography
-- Better road conditions
-
-### Green Season (November-May)
-- Lush landscapes
-- Newborn animals
-- Dramatic storm clouds
-
-Samburu rewards patient photographers with images impossible to capture anywhere else. Take time to observe, wait for the perfect moment, and let the magic of this special place unfold through your lens.
+      <h1>Photography Safari in Samburu: Capturing Kenya's Hidden Gem</h1>
+      <p>Samburu National Reserve offers photographers something special—rare species, dramatic landscapes, and fewer crowds than other famous parks.</p>
+      
+      <h2>The Samburu Special Five</h2>
+      <p>These endemic species make Samburu a photographer's paradise:</p>
+      
+      <h3>Grevy's Zebra</h3>
+      <ul>
+        <li>Larger than common zebras</li>
+        <li>Narrower stripes, white belly</li>
+        <li>Photograph against red earth for stunning contrast</li>
+      </ul>
+      
+      <h3>Reticulated Giraffe</h3>
+      <ul>
+        <li>Distinct geometric pattern</li>
+        <li>Beautiful against acacia trees</li>
+        <li>Best shots during golden hour</li>
+      </ul>
+      
+      <h3>Somali Ostrich</h3>
+      <ul>
+        <li>Blue legs and neck (males)</li>
+        <li>Different from common ostrich</li>
+        <li>Great for behavioral shots</li>
+      </ul>
+      
+      <h3>Beisa Oryx</h3>
+      <ul>
+        <li>Magnificent horns and markings</li>
+        <li>Often found in open areas</li>
+        <li>Excellent for silhouettes</li>
+      </ul>
+      
+      <h3>Gerenuk</h3>
+      <ul>
+        <li>"Giraffe-necked gazelle"</li>
+        <li>Stands on hind legs to feed</li>
+        <li>Capture this unique behavior</li>
+      </ul>
+      
+      <h2>Best Photography Locations</h2>
+      
+      <h3>Ewaso Nyiro River</h3>
+      <ul>
+        <li>Wildlife congregates here</li>
+        <li>Reflections in still water</li>
+        <li>Crocodiles and hippos</li>
+      </ul>
+      
+      <h3>Buffalo Springs</h3>
+      <ul>
+        <li>Natural spring attracts animals</li>
+        <li>Lush vegetation contrast</li>
+        <li>Early morning visits best</li>
+      </ul>
+      
+      <h3>Konorit Hills</h3>
+      <ul>
+        <li>Panoramic landscape shots</li>
+        <li>Sunrise and sunset photography</li>
+        <li>Rock formations and vistas</li>
+      </ul>
+      
+      <h2>Technical Tips</h2>
+      
+      <h3>Camera Settings</h3>
+      <ul>
+        <li>Shoot in manual mode for consistent exposure</li>
+        <li>Fast shutter speeds for action (1/500s or faster)</li>
+        <li>Aperture f/5.6-f/8 for sharp subjects</li>
+      </ul>
+      
+      <h3>Lighting Considerations</h3>
+      <ul>
+        <li>Golden hour: 30 minutes after sunrise, before sunset</li>
+        <li>Overcast days provide even lighting</li>
+        <li>Avoid harsh midday sun</li>
+      </ul>
+      
+      <h3>Composition Techniques</h3>
+      <ul>
+        <li>Rule of thirds for wildlife placement</li>
+        <li>Leading lines with river bends</li>
+        <li>Frame subjects with tree branches</li>
+      </ul>
+      
+      <h2>Equipment Recommendations</h2>
+      
+      <h3>Essential Gear</h3>
+      <ul>
+        <li>70-200mm lens minimum</li>
+        <li>400mm+ for distant subjects</li>
+        <li>Sturdy tripod for low light</li>
+        <li>Extra batteries (cold drains power)</li>
+      </ul>
+      
+      <h3>Protection</h3>
+      <ul>
+        <li>Dust covers for equipment</li>
+        <li>Lens cleaning kit</li>
+        <li>Waterproof bags</li>
+      </ul>
+      
+      <h2>Behavioral Photography</h2>
+      
+      <h3>Patience Pays Off</h3>
+      <blockquote>
+        <p>"The best wildlife photos happen when you wait for the story to unfold." - Professional Safari Photographer</p>
+      </blockquote>
+      
+      <h3>Story-Telling Shots</h3>
+      <ul>
+        <li>Animal interactions</li>
+        <li>Feeding behaviors</li>
+        <li>Environmental context</li>
+      </ul>
+      
+      <h2>Ethical Photography</h2>
+      
+      <h3>Respect Wildlife</h3>
+      <ul>
+        <li>Maintain safe distances</li>
+        <li>Never disturb animals for photos</li>
+        <li>Follow guide instructions</li>
+      </ul>
+      
+      <h3>Cultural Sensitivity</h3>
+      <ul>
+        <li>Ask permission before photographing people</li>
+        <li>Respect local customs</li>
+        <li>Consider giving copies to subjects</li>
+      </ul>
+      
+      <h2>Post-Processing Tips</h2>
+      
+      <h3>RAW Files</h3>
+      <ul>
+        <li>Always shoot in RAW format</li>
+        <li>Greater flexibility in editing</li>
+        <li>Better shadow/highlight recovery</li>
+      </ul>
+      
+      <h3>Key Adjustments</h3>
+      <ul>
+        <li>Enhance natural colors subtly</li>
+        <li>Sharpen eyes in wildlife portraits</li>
+        <li>Adjust exposure for dramatic skies</li>
+      </ul>
+      
+      <h2>Best Times to Visit</h2>
+      
+      <h3>Dry Season (June-October)</h3>
+      <ul>
+        <li>Animals concentrate near water</li>
+        <li>Clearer skies for photography</li>
+        <li>Better road conditions</li>
+      </ul>
+      
+      <h3>Green Season (November-May)</h3>
+      <ul>
+        <li>Lush landscapes</li>
+        <li>Newborn animals</li>
+        <li>Dramatic storm clouds</li>
+      </ul>
+      
+      <p>Samburu rewards patient photographers with images impossible to capture anywhere else. Take time to observe, wait for the perfect moment, and let the magic of this special place unfold through your lens.</p>
     `,
     featuredImage: "https://images.unsplash.com/photo-1518877593221-1f28583780b4?w=800&h=600&fit=crop",
     tags: ["Samburu", "Photography", "Safari", "Wildlife"],
@@ -475,118 +561,150 @@ Samburu rewards patient photographers with images impossible to capture anywhere
     title: "Responsible Wildlife Tourism: Making Your Safari Count",
     excerpt: "Learn how to choose ethical safari operators and make your wildlife tourism experience contribute positively to conservation and local communities.",
     content: `
-# Responsible Wildlife Tourism: Making Your Safari Count
-
-Every safari choice you make has an impact. Here's how to ensure your adventure contributes positively to wildlife conservation and local communities.
-
-## Choosing Ethical Operators
-
-### Research Before Booking
-- Look for certifications (Kenya Association of Tour Operators)
-- Check community involvement
-- Read reviews from conservation organizations
-
-### Red Flags to Avoid
-- Promises of guaranteed sightings
-- Unethically cheap prices
-- No mention of conservation support
-- Poor guide qualifications
-
-## Conservation Impact
-
-### How Tourism Helps
-- Park fees fund conservation efforts
-- Creates economic incentives for wildlife protection
-- Supports anti-poaching operations
-
-### Direct Contributions
-- Choose operators that contribute extra funds
-- Visit community conservancies
-- Support wildlife rehabilitation centers
-
-## Community Benefits
-
-### Local Employment
-- Guides, porters, and camp staff
-- Cultural performers and crafts people
-- Transport and accommodation providers
-
-### Community Projects
-- Schools and medical clinics
-- Water projects and infrastructure
-- Women's cooperatives
-
-## Responsible Behavior
-
-### Wildlife Interactions
-> "Take only photographs, leave only footprints, kill only time."
-
-### Guidelines
-- Maintain respectful distances
-- Never feed wild animals
-- Keep noise levels down
-- Follow guide instructions always
-
-### Photography Ethics
-- No flash photography of nocturnal animals
-- Don't ask guides to disturb animals for photos
-- Respect breeding and nesting sites
-
-## Cultural Sensitivity
-
-### Community Visits
-- Ask permission before photographing people
-- Purchase crafts directly from artisans
-- Respect local customs and traditions
-
-### Fair Compensation
-- Tip guides and staff appropriately
-- Buy locally made products
-- Eat at local restaurants when possible
-
-## Environmental Responsibility
-
-### Minimize Your Footprint
-- Pack reusable water bottles
-- Avoid single-use plastics
-- Stay on designated paths
-
-### Accommodation Choices
-- Choose eco-friendly lodges
-- Support solar-powered facilities
-- Look for water conservation practices
-
-## Post-Safari Action
-
-### Share Responsibly
-- Post photos that inspire conservation
-- Share information about ethical operators
-- Educate others about responsible tourism
-
-### Ongoing Support
-- Donate to conservation organizations
-- Follow up on community projects
-- Plan return visits to support long-term relationships
-
-## Measuring Impact
-
-### Questions to Ask Operators
-- What percentage of profits supports conservation?
-- How do you train and compensate local staff?
-- What community projects do you support?
-- How do you minimize environmental impact?
-
-## Making a Difference
-
-Your safari can be more than just an adventure—it can be a force for positive change. By choosing responsible operators and practicing ethical tourism, you become part of the solution for wildlife conservation and community development.
-
-### Long-term Benefits
-- Sustainable wildlife populations
-- Economic opportunities for local communities
-- Preserved habitats for future generations
-- Cultural heritage protection
-
-Remember: responsible tourism costs more initially but creates value that lasts for generations. Choose operators who share your values and make your adventure meaningful.
+      <h1>Responsible Wildlife Tourism: Making Your Safari Count</h1>
+      <p>Every safari choice you make has an impact. Here's how to ensure your adventure contributes positively to wildlife conservation and local communities.</p>
+      
+      <h2>Choosing Ethical Operators</h2>
+      
+      <h3>Research Before Booking</h3>
+      <ul>
+        <li>Look for certifications (Kenya Association of Tour Operators)</li>
+        <li>Check community involvement</li>
+        <li>Read reviews from conservation organizations</li>
+      </ul>
+      
+      <h3>Red Flags to Avoid</h3>
+      <ul>
+        <li>Promises of guaranteed sightings</li>
+        <li>Unethically cheap prices</li>
+        <li>No mention of conservation support</li>
+        <li>Poor guide qualifications</li>
+      </ul>
+      
+      <h2>Conservation Impact</h2>
+      
+      <h3>How Tourism Helps</h3>
+      <ul>
+        <li>Park fees fund conservation efforts</li>
+        <li>Creates economic incentives for wildlife protection</li>
+        <li>Supports anti-poaching operations</li>
+      </ul>
+      
+      <h3>Direct Contributions</h3>
+      <ul>
+        <li>Choose operators that contribute extra funds</li>
+        <li>Visit community conservancies</li>
+        <li>Support wildlife rehabilitation centers</li>
+      </ul>
+      
+      <h2>Community Benefits</h2>
+      
+      <h3>Local Employment</h3>
+      <ul>
+        <li>Guides, porters, and camp staff</li>
+        <li>Cultural performers and crafts people</li>
+        <li>Transport and accommodation providers</li>
+      </ul>
+      
+      <h3>Community Projects</h3>
+      <ul>
+        <li>Schools and medical clinics</li>
+        <li>Water projects and infrastructure</li>
+        <li>Women's cooperatives</li>
+      </ul>
+      
+      <h2>Responsible Behavior</h2>
+      
+      <h3>Wildlife Interactions</h3>
+      <blockquote>
+        <p>"Take only photographs, leave only footprints, kill only time."</p>
+      </blockquote>
+      
+      <h3>Guidelines</h3>
+      <ul>
+        <li>Maintain respectful distances</li>
+        <li>Never feed wild animals</li>
+        <li>Keep noise levels down</li>
+        <li>Follow guide instructions always</li>
+      </ul>
+      
+      <h3>Photography Ethics</h3>
+      <ul>
+        <li>No flash photography of nocturnal animals</li>
+        <li>Don't ask guides to disturb animals for photos</li>
+        <li>Respect breeding and nesting sites</li>
+      </ul>
+      
+      <h2>Cultural Sensitivity</h2>
+      
+      <h3>Community Visits</h3>
+      <ul>
+        <li>Ask permission before photographing people</li>
+        <li>Purchase crafts directly from artisans</li>
+        <li>Respect local customs and traditions</li>
+      </ul>
+      
+      <h3>Fair Compensation</h3>
+      <ul>
+        <li>Tip guides and staff appropriately</li>
+        <li>Buy locally made products</li>
+        <li>Eat at local restaurants when possible</li>
+      </ul>
+      
+      <h2>Environmental Responsibility</h2>
+      
+      <h3>Minimize Your Footprint</h3>
+      <ul>
+        <li>Pack reusable water bottles</li>
+        <li>Avoid single-use plastics</li>
+        <li>Stay on designated paths</li>
+      </ul>
+      
+      <h3>Accommodation Choices</h3>
+      <ul>
+        <li>Choose eco-friendly lodges</li>
+        <li>Support solar-powered facilities</li>
+        <li>Look for water conservation practices</li>
+      </ul>
+      
+      <h2>Post-Safari Action</h2>
+      
+      <h3>Share Responsibly</h3>
+      <ul>
+        <li>Post photos that inspire conservation</li>
+        <li>Share information about ethical operators</li>
+        <li>Educate others about responsible tourism</li>
+      </ul>
+      
+      <h3>Ongoing Support</h3>
+      <ul>
+        <li>Donate to conservation organizations</li>
+        <li>Follow up on community projects</li>
+        <li>Plan return visits to support long-term relationships</li>
+      </ul>
+      
+      <h2>Measuring Impact</h2>
+      
+      <h3>Questions to Ask Operators</h3>
+      <ul>
+        <li>What percentage of profits supports conservation?</li>
+        <li>How do you train and compensate local staff?</li>
+        <li>What community projects do you support?</li>
+        <li>How do you minimize environmental impact?</li>
+      </ul>
+      
+      <h2>Making a Difference</h2>
+      <p>Your safari can be more than just an adventure—it can be a force for positive change. By choosing responsible operators and practicing ethical tourism, you become part of the solution for wildlife conservation and community development.</p>
+      
+      <h3>Long-term Benefits</h3>
+      <ul>
+        <li>Sustainable wildlife populations</li>
+        <li>Economic opportunities for local communities</li>
+        <li>Preserved habitats for future generations</li>
+        <li>Cultural heritage protection</li>
+      </ul>
+      
+      <p>Remember: responsible tourism costs more initially but creates value that lasts for generations. Choose operators who share your values and make your adventure meaningful.</p>
     `,
     featuredImage: "https://images.unsplash.com/photo-1485833077593-4278bba3f11f?w=800&h=600&fit=crop",
     tags: ["Conservation", "Tips", "Safari", "Responsible Tourism"],
