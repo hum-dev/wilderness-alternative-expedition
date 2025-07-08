@@ -1,38 +1,116 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Skeleton } from "@/components/ui/skeleton";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
-import { blogPosts } from "@/data/blogPosts";
+import { client, postsQuery, urlFor, type SanityPost } from "@/lib/sanity";
+import { format } from "date-fns";
 
 const Blog = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedDestination, setSelectedDestination] = useState("all");
   const [selectedType, setSelectedType] = useState("all");
+  const [posts, setPosts] = useState<SanityPost[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   const destinations = ["Mt. Kenya", "Kilimanjaro", "Maasai Mara", "Samburu", "Amboseli"];
   const types = ["Trekking", "Safari", "Tips", "Packing Lists", "Wildlife"];
 
+  useEffect(() => {
+    const fetchPosts = async () => {
+      try {
+        setLoading(true);
+        const data = await client.fetch(postsQuery);
+        setPosts(data);
+      } catch (err) {
+        setError("Failed to load blog posts");
+        console.error("Error fetching posts:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchPosts();
+  }, []);
+
   const filteredPosts = useMemo(() => {
-    return blogPosts.filter(post => {
-      const matchesSearch = post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                           post.excerpt.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                           post.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()));
+    return posts.filter(post => {
+      const matchesSearch = post.title.toLowerCase().includes(searchTerm.toLowerCase());
+      
+      // Extract tags from post body or title for filtering
+      const postTags = extractTagsFromPost(post);
       
       const matchesDestination = selectedDestination === "all" || 
-                                post.tags.includes(selectedDestination);
+                                postTags.some(tag => tag.toLowerCase().includes(selectedDestination.toLowerCase()));
       
       const matchesType = selectedType === "all" || 
-                         post.tags.includes(selectedType);
+                         postTags.some(tag => tag.toLowerCase().includes(selectedType.toLowerCase()));
 
       return matchesSearch && matchesDestination && matchesType;
     });
-  }, [searchTerm, selectedDestination, selectedType]);
+  }, [searchTerm, selectedDestination, selectedType, posts]);
+
+  const extractTagsFromPost = (post: SanityPost) => {
+    // Extract potential tags from title and body content
+    const titleWords = post.title.toLowerCase().split(/\s+/);
+    interface BlockChild {
+      text: string;
+      [key: string]: unknown;
+    }
+
+    const bodyText = post.body?.map((block: unknown) => 
+      (typeof block === 'object' && block !== null && 'children' in block)
+        ? ((block as { children?: BlockChild[] }).children?.map((child: BlockChild) => child.text).join(' ') || '')
+        : ''
+    ).join(' ').toLowerCase() || '';
+    
+    const allTags = [...titleWords];
+    
+    // Add destination tags based on content
+    destinations.forEach(dest => {
+      if (titleWords.some(word => dest.toLowerCase().includes(word)) || 
+          bodyText.includes(dest.toLowerCase())) {
+        allTags.push(dest);
+      }
+    });
+    
+    // Add type tags based on content
+    types.forEach(type => {
+      if (titleWords.some(word => type.toLowerCase().includes(word)) || 
+          bodyText.includes(type.toLowerCase())) {
+        allTags.push(type);
+      }
+    });
+    
+    return allTags;
+  };
+
+  const formatDate = (dateString: string) => {
+    return format(new Date(dateString), "MMMM dd, yyyy");
+  };
+
+  interface BlockChild {
+    text: string;
+    [key: string]: unknown;
+  }
+
+  interface BodyBlock {
+    _type: string;
+    children?: BlockChild[];
+    [key: string]: unknown;
+  }
+
+  const getExcerpt = (body: BodyBlock[]) => {
+    const firstTextBlock = body?.find(block => block._type === 'block' && block.children?.[0]?.text);
+    return firstTextBlock?.children?.[0]?.text?.substring(0, 150) + "..." || "Read more...";
+  };
 
   return (
     <>
@@ -115,6 +193,15 @@ const Blog = () => {
                   </span>
                 </div>
               )}
+
+              {/* Results Count */}
+              {!loading && !(searchTerm || selectedDestination !== "all" || selectedType !== "all") && (
+                <div className="mb-6">
+                  <span className="text-muted-foreground">
+                    {filteredPosts.length} post{filteredPosts.length !== 1 ? 's' : ''} found
+                  </span>
+                </div>
+              )}
             </div>
           </div>
         </section>
@@ -123,7 +210,34 @@ const Blog = () => {
         <section className="py-16 bg-muted">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              {filteredPosts.length === 0 ? (
+              {loading ? (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {Array.from({ length: 6 }).map((_, i) => (
+                    <Card key={i} className="overflow-hidden">
+                      <Skeleton className="w-full h-48" />
+                      <CardHeader>
+                        <Skeleton className="h-4 w-3/4 mb-2" />
+                        <Skeleton className="h-6 w-full" />
+                      </CardHeader>
+                      <CardContent>
+                        <Skeleton className="h-4 w-full mb-2" />
+                        <Skeleton className="h-4 w-2/3" />
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+              ) : error ? (
+                <div className="text-center py-12">
+                  <h3 className="text-2xl font-bold text-destructive mb-4">Error Loading Posts</h3>
+                  <p className="text-muted-foreground mb-6">{error}</p>
+                  <Button 
+                    variant="outline"
+                    onClick={() => window.location.reload()}
+                  >
+                    Try Again
+                  </Button>
+                </div>
+              ) : filteredPosts.length === 0 ? (
                 <div className="text-center py-12">
                   <h3 className="text-2xl font-bold text-primary mb-4">No posts found</h3>
                   <p className="text-muted-foreground mb-6">
@@ -143,35 +257,33 @@ const Blog = () => {
               ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {filteredPosts.map((post) => (
-                    <Card key={post.slug} className="overflow-hidden hover:shadow-adventure transition-all duration-300 group cursor-pointer">
-                      <Link to={`/blog/${post.slug}`}>
+                    <Card key={post._id} className="overflow-hidden hover:shadow-adventure transition-all duration-300 group cursor-pointer">
+                      <Link to={`/blog/${post.slug.current}`}>
                         <div className="relative overflow-hidden">
-                          <img
-                            src={post.featuredImage}
-                            alt={post.title}
-                            className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                          />
+                          {post.image ? (
+                            <img
+                              src={urlFor(post.image).width(400).height(250).fit("crop").auto("format").url()}
+                              alt={post.image.alt || post.title}
+                              className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                            />
+                          ) : (
+                            <div className="w-full h-48 bg-muted flex items-center justify-center">
+                              <span className="text-muted-foreground">No image</span>
+                            </div>
+                          )}
                           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                         </div>
                         <CardHeader>
-                          <div className="flex flex-wrap gap-2 mb-2">
-                            {post.tags.slice(0, 3).map((tag) => (
-                              <Badge key={tag} variant="secondary" className="text-xs">
-                                {tag}
-                              </Badge>
-                            ))}
-                          </div>
                           <CardTitle className="text-xl text-primary group-hover:text-primary/80 transition-colors line-clamp-2">
                             {post.title}
                           </CardTitle>
                         </CardHeader>
                         <CardContent>
                           <CardDescription className="text-base mb-4 line-clamp-3">
-                            {post.excerpt}
+                            {getExcerpt(post.body as BodyBlock[])}
                           </CardDescription>
                           <div className="flex items-center justify-between text-sm text-muted-foreground">
-                            <span>{post.date}</span>
-                            <span>{post.readTime} min read</span>
+                            <span>{formatDate(post.publishedAt)}</span>
                           </div>
                         </CardContent>
                       </Link>
