@@ -24,7 +24,9 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <div className="w-10 h-10 bg-gradient-adventure rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">W</span>
+              <span className="text-white font-bold text-lg">
+                <img src="/src/assets/wilderness alternative logo.png" alt="Wilderness Alternative Logo" />
+              </span>
             </div>
             <div>
               <h1 className="text-xl font-bold text-primary">Wilderness Alternative</h1>

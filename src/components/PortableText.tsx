@@ -19,22 +19,22 @@ const components = {
     ),
   },
   block: {
-    h1: ({ children }: { children: React.ReactNode }) => (
+    h1: ({ children, ...props }: { children?: React.ReactNode }) => (
       <h1 className="text-4xl font-bold text-primary mt-12 mb-6">{children}</h1>
     ),
-    h2: ({ children }: { children: React.ReactNode }) => (
+    h2: ({ children, ...props }: { children?: React.ReactNode }) => (
       <h2 className="text-3xl font-bold text-primary mt-10 mb-5">{children}</h2>
     ),
-    h3: ({ children }: { children: React.ReactNode }) => (
+    h3: ({ children, ...props }: { children?: React.ReactNode }) => (
       <h3 className="text-2xl font-bold text-primary mt-8 mb-4">{children}</h3>
     ),
-    h4: ({ children }: { children: React.ReactNode }) => (
+    h4: ({ children, ...props }: { children?: React.ReactNode }) => (
       <h4 className="text-xl font-bold text-primary mt-6 mb-3">{children}</h4>
     ),
-    normal: ({ children }: { children: React.ReactNode }) => (
+    normal: ({ children, ...props }: { children?: React.ReactNode }) => (
       <p className="mb-6 leading-relaxed text-foreground">{children}</p>
     ),
-    blockquote: ({ children }: { children: React.ReactNode }) => (
+    blockquote: ({ children, ...props }: { children?: React.ReactNode }) => (
       <blockquote className="border-l-4 border-primary pl-6 italic text-muted-foreground my-6">
         {children}
       </blockquote>
@@ -65,16 +65,16 @@ const components = {
     ),
   },
   list: {
-    bullet: ({ children }: { children: React.ReactNode }) => (
-      <ul className="list-disc list-inside mb-6 space-y-2">{children}</ul>
+    bullet: (props: React.PropsWithChildren<object>) => (
+      <ul className="list-disc list-inside mb-6 space-y-2">{props.children}</ul>
     ),
-    number: ({ children }: { children: React.ReactNode }) => (
-      <ol className="list-decimal list-inside mb-6 space-y-2">{children}</ol>
+    number: (props: React.PropsWithChildren<object>) => (
+      <ol className="list-decimal list-inside mb-6 space-y-2">{props.children}</ol>
     ),
   },
   listItem: {
-    bullet: ({ children }: { children: React.ReactNode }) => <li className="mb-2">{children}</li>,
-    number: ({ children }: { children: React.ReactNode }) => <li className="mb-2">{children}</li>,
+    bullet: (props: React.PropsWithChildren<object>) => <li className="mb-2">{props.children}</li>,
+    number: (props: React.PropsWithChildren<object>) => <li className="mb-2">{props.children}</li>,
   },
 };
 
