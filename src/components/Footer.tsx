@@ -65,8 +65,8 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Stay Connected</h4>
             <div className="space-y-4">
               <div className="text-primary-foreground/80">
-                <p>Email: info@wildernessexpedition.com</p>
-                <p>Phone: +254 700 000 000</p>
+                <p>Email: info@wildernessalternativeexpedition.com</p>
+                <p>Phone: +254 743789655</p>
                 <p>Nairobi, Kenya</p>
               </div>
               
