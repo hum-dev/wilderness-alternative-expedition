@@ -4,6 +4,11 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
+import lemoshoCard from "@/assets/lemosho.jpg";
+import machameCard from "@/assets/machame.jpg";
+import maranguCard from "@/assets/marangu.jpg";
+import rongaiCard from "@/assets/Rongai.jpg";
+import northernCard from "@/assets/Northern Circuit.jpg";
 import { ArrowLeft, Mountain, Clock, TrendingUp, MapPin } from "lucide-react";
 
 const Kilimanjaro = () => {
@@ -11,31 +16,31 @@ const Kilimanjaro = () => {
     {
       name: "Lemosho Route",
       link: "/kilimanjaro/lemosho",
-      image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=600&fit=crop",
+      image: lemoshoCard,
       description: "Scenic and varied with low traffic and a high success rate."
     },
     {
       name: "Machame Route",
       link: "/kilimanjaro/machame", 
-      image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=600&fit=crop",
+      image: machameCard,
       description: "Known as the Whisky Route; a stunning and popular trek."
     },
     {
       name: "Marangu Route",
       link: "/kilimanjaro/marangu",
-      image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=600&fit=crop",
+      image: maranguCard,
       description: "The only route with hut accommodation. Shorter and comfortable."
     },
     {
       name: "Rongai Route",
       link: "/kilimanjaro/rongai",
-      image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=600&fit=crop",
+      image: rongaiCard,
       description: "Approaches from the north. Quiet and gradual ascent."
     },
     {
       name: "Northern Circuit",
       link: "/kilimanjaro/northern-circuit",
-      image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=600&fit=crop",
+      image: northernCard,
       description: "The newest and longest route with excellent acclimatization."
     }
   ];
@@ -133,6 +138,9 @@ const Kilimanjaro = () => {
                           <img 
                             src={route.image}
                             alt={`${route.name} on Mount Kilimanjaro`}
+                            width={800}
+                            height={600}
+                            loading="lazy"
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                           />
                         </div>

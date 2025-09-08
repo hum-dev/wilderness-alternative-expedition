@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Clock, MapPin, TrendingUp, Camera } from "lucide-react";
+import chogoriaImg from "@/assets/Chogoria.jpg";
 
 const Chogoria = () => {
   return (
@@ -48,6 +49,16 @@ const Chogoria = () => {
                   <span>Most Scenic</span>
                 </div>
               </div>
+            </div>
+            <div className="mt-8">
+              <img
+                src={chogoriaImg}
+                alt="Mount Kenya Chogoria Route - Lake Michaelson and cliffs"
+                width={1600}
+                height={900}
+                loading="eager"
+                className="w-full h-80 object-cover rounded-lg shadow-lg"
+              />
             </div>
           </div>
         </section>

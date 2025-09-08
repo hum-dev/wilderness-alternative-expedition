@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import samburuImg from "@/assets/Samburu.jpg";
 import { Helmet } from "react-helmet-async";
 
 const Samburu = () => {
@@ -55,9 +56,12 @@ const Samburu = () => {
         <section className="relative py-20 bg-gradient-safari text-white">
           <div className="absolute inset-0">
             <img
-              src="https://images.unsplash.com/photo-1493962853295-0fd70327578a?w=1200&h=800&fit=crop"
+              src={samburuImg}
               alt="Samburu landscape"
               className="w-full h-full object-cover"
+              width={1600}
+              height={900}
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/30"></div>
           </div>

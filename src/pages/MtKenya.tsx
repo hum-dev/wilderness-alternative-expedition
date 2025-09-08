@@ -2,8 +2,15 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
+import sirimonImg from "@/assets/sirimon.jpg";
+import chogoriaImg from "@/assets/Chogoria.jpg";
+import narumoruImg from "@/assets/narumoru.jpg";
+import burguretImg from "@/assets/burguret.jpg";
+import kamwetiImg from "@/assets/Kamweti.jpg";
+import timauImg from "@/assets/Timau.jpg";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
+
 
 const MtKenya = () => {
   const routes = [
@@ -44,46 +51,48 @@ const MtKenya = () => {
     }
   ];
 
+
+
   const routesGallery = [
     {
       name: "Sirimon Route",
-      image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=600&fit=crop",
+      image: sirimonImg,
       description: "Mount Kenya peaks as seen from Shipton's Camp on Sirimon Route.",
       link: "/mt-kenya/sirimon"
     },
     {
       name: "Chogoria Route", 
-      image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?w=800&h=600&fit=crop",
+      image: chogoriaImg,
       description: "Known for its beauty — Lake Michaelson, Mount Kenya.",
       link: "/mt-kenya/chogoria"
     },
     {
       name: "Naro Moru Route",
-      image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=600&fit=crop", 
+      image: narumoruImg, 
       description: "The fastest and most direct route to Point Lenana, with the challenging Vertical Bog.",
       link: "/mt-kenya/naro-moru"
     },
     {
       name: "Chogoria Down Sirimon Route",
-      image: "https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?w=800&h=600&fit=crop",
+      image: chogoriaImg,
       description: "Our guests enjoying evening tea by the shores of lake michaelson.",
       link: "/mt-kenya/chogoria-down"
     },
     {
       name: "Burguret Route",
-      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=800&h=600&fit=crop",
+      image: burguretImg,
       description: "A remote, little-used trail through dense forest and wild landscapes. Ideal for those seeking solitude.",
       link: "/mt-kenya/burguret"
     },
     {
       name: "Kamweti Route", 
-      image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=600&fit=crop",
+      image: kamwetiImg,
       description: "A less-traveled path offering a unique perspective of Mount Kenya's diverse ecosystems.",
       link: "/mt-kenya/kamweti"
     },
     {
       name: "Timau Route",
-      image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=600&fit=crop",
+      image: timauImg,
       description: "A scenic route known for its beautiful landscapes and diverse wildlife.", 
       link: "/mt-kenya/timau"
     }
@@ -179,6 +188,9 @@ const MtKenya = () => {
                       <img
                         src={route.image}
                         alt={route.name}
+                        width={800}
+                        height={600}
+                        loading="lazy"
                         className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

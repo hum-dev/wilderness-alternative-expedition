@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Clock, MapPin, Users, TrendingUp } from "lucide-react";
+import sirimonImg from "@/assets/sirimon.jpg";
 
 const Sirimon = () => {
   return (
@@ -44,6 +45,17 @@ const Sirimon = () => {
                   <span>Northwest Approach</span>
                 </div>
               </div>
+            </div>
+            {/* Decorative/local hero image (improves LCP and gives a specific OG image when crawled) */}
+            <div className="mt-8">
+              <img
+                src={sirimonImg}
+                alt="Mount Kenya Sirimon Route - Shipton's Camp view"
+                width={1600}
+                height={900}
+                loading="eager"
+                className="w-full h-80 object-cover rounded-lg shadow-lg"
+              />
             </div>
           </div>
         </section>

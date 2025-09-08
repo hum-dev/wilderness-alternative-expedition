@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import olpejetaImg from "@/assets/olpejeta.jpg";
 import { Helmet } from "react-helmet-async";
 
 const OlPejeta = () => {
@@ -65,9 +66,12 @@ const OlPejeta = () => {
         <section className="relative py-20 bg-gradient-safari text-white">
           <div className="absolute inset-0">
             <img
-              src="https://images.unsplash.com/photo-1439886183900-e79ec0057170?w=1200&h=800&fit=crop"
+              src={olpejetaImg}
               alt="Ol Pejeta Conservancy landscape"
               className="w-full h-full object-cover"
+              width={1200}
+              height={800}
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/30"></div>
           </div>

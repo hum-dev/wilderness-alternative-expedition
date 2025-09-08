@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
+import logoSrc from "@/assets/wilderness_logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,10 +29,8 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-adventure rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">W</span>
-            </div>
+          <Link to="/" className="flex items-center space-x-3">
+            <img src={logoSrc} alt="Wilderness Alternative logo" className="w-12 h-12 object-contain" />
             <div>
               <h1 className="text-xl font-bold text-primary">Wilderness Alternative</h1>
               <p className="text-xs text-muted-foreground">Expedition</p>

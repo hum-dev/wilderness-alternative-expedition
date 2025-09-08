@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Clock, MapPin, TrendingUp, AlertTriangle } from "lucide-react";
+import narumoruImg from "@/assets/narumoru.jpg";
 
 const NaroMoru = () => {
   return (
@@ -44,6 +45,16 @@ const NaroMoru = () => {
                   <span>Southwest Approach</span>
                 </div>
               </div>
+            </div>
+            <div className="mt-8">
+              <img
+                src={narumoruImg}
+                alt="Mount Kenya Naro Moru Route - Vertical Bog approach"
+                width={1600}
+                height={900}
+                loading="eager"
+                className="w-full h-80 object-cover rounded-lg shadow-lg"
+              />
             </div>
           </div>
         </section>

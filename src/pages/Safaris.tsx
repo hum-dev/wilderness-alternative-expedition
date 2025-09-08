@@ -3,43 +3,49 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import amboseliCard from "@/assets/Amboseli.jpg";
+import samburuCard from "@/assets/Samburu.jpg";
+import maasaiCard from "@/assets/maasai mara.jpg";
+import meruCard from "@/assets/meru safari.jpeg";
+import olpejetaCard from "@/assets/olpejeta.jpg";
+import nairobiCard from "@/assets/nairobi park.jpg";
 import { Helmet } from "react-helmet-async";
 
 const Safaris = () => {
   const safaris = [
     {
       name: "Maasai Mara",
-      image: "https://images.unsplash.com/photo-1549366021-9f761d040ed2?w=800&h=600&fit=crop",
+      image: maasaiCard,
       description: "Home of the Great Migration and the Big Five, the Mara is Kenya's premier safari park.",
       link: "/safaris/maasai-mara"
     },
     {
       name: "Amboseli",
-      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=800&h=600&fit=crop",
+      image: amboseliCard,
       description: "Famous for large elephant herds and stunning views of Mount Kilimanjaro.",
       link: "/safaris/amboseli"
     },
     {
       name: "Samburu",
-      image: "https://images.unsplash.com/photo-1493962853295-0fd70327578a?w=800&h=600&fit=crop",
+      image: samburuCard,
       description: "Experience rare species and the rich culture of Northern Kenya in Samburu Reserve.",
       link: "/safaris/samburu"
     },
     {
       name: "Meru",
-      image: "https://images.unsplash.com/photo-1518877593221-1f28583780b4?w=800&h=600&fit=crop",
+      image: meruCard,
       description: "A hidden gem where Elsa the lioness of 'Born Free' was raised—raw, wild, and lush.",
       link: "/safaris/meru"
     },
     {
       name: "Ol Pejeta",
-      image: "https://images.unsplash.com/photo-1439886183900-e79ec0057170?w=800&h=600&fit=crop",
+      image: olpejetaCard,
       description: "Home to endangered rhinos, chimpanzees, and luxurious conservancy experiences.",
       link: "/safaris/ol-pejeta"
     },
     {
       name: "Nairobi National Park",
-      image: "https://images.unsplash.com/photo-1485833077593-4278bba3f11f?w=800&h=600&fit=crop",
+      image: nairobiCard,
       description: "Wildlife against a city skyline. The only national park within a capital city.",
       link: "/safaris/nairobi-park"
     }
@@ -129,6 +135,9 @@ const Safaris = () => {
                         src={safari.image}
                         alt={safari.name}
                         className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                        width={800}
+                        height={600}
+                        loading="lazy"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     </div>

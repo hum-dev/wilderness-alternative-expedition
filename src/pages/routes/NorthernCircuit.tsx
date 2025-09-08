@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
+import northernImg from "@/assets/Northern Circuit.jpg";
 import { ArrowLeft, Clock, MapPin, TrendingUp, Award } from "lucide-react";
 
 const NorthernCircuit = () => {
@@ -48,6 +49,9 @@ const NorthernCircuit = () => {
                   <span>Highest Success Rate</span>
                 </div>
               </div>
+            </div>
+            <div className="absolute inset-0 pointer-events-none -z-10">
+              <img src={northernImg} alt="Northern Circuit" className="w-full h-full object-cover opacity-30" width={1600} height={900} loading="lazy" />
             </div>
           </div>
         </section>

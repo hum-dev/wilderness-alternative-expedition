@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Clock, MapPin, TrendingUp, TreePine, Eye } from "lucide-react";
+import burguretImg from "@/assets/burguret.jpg";
 
 const Burguret = () => {
   return (
@@ -52,6 +53,16 @@ const Burguret = () => {
                   <span>Wildlife Rich</span>
                 </div>
               </div>
+            </div>
+            <div className="mt-8">
+              <img
+                src={burguretImg}
+                alt="Mount Kenya Burguret Route - bamboo forest and highland vistas"
+                width={1600}
+                height={900}
+                loading="eager"
+                className="w-full h-80 object-cover rounded-lg shadow-lg"
+              />
             </div>
           </div>
         </section>

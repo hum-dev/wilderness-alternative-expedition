@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
+import lemoshoImg from "@/assets/lemosho.jpg";
 import { ArrowLeft, Clock, MapPin, TrendingUp, TreePine } from "lucide-react";
 
 const Lemosho = () => {
   return (
     <>
+  {/* Local hero image for Lemosho */}
       <Helmet>
         <title>Kilimanjaro Lemosho Route - Most Scenic Path to Uhuru Peak</title>
         <meta name="description" content="Experience the most beautiful Kilimanjaro route. The Lemosho Route offers stunning scenery, excellent acclimatization, and high success rates." />
@@ -48,6 +50,9 @@ const Lemosho = () => {
                   <span>Most Scenic</span>
                 </div>
               </div>
+            </div>
+            <div className="absolute inset-0 pointer-events-none -z-10">
+              <img src={lemoshoImg} alt="Lemosho Route" className="w-full h-full object-cover opacity-30" width={1600} height={900} loading="lazy" />
             </div>
           </div>
         </section>

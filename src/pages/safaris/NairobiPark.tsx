@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import nairobiImg from "@/assets/nairobi park.jpg";
 import { Helmet } from "react-helmet-async";
 
 const NairobiPark = () => {
@@ -68,9 +69,12 @@ const NairobiPark = () => {
         <section className="relative py-20 bg-gradient-safari text-white">
           <div className="absolute inset-0">
             <img
-              src="https://images.unsplash.com/photo-1485833077593-4278bba3f11f?w=1200&h=800&fit=crop"
+              src={nairobiImg}
               alt="Nairobi National Park with city skyline"
               className="w-full h-full object-cover"
+              width={1200}
+              height={800}
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/30"></div>
           </div>

@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Clock, MapPin, TrendingUp, TreePine } from "lucide-react";
+import timauImg from "@/assets/Timau.jpg";
 
 const Timau = () => {
   return (
@@ -48,6 +49,16 @@ const Timau = () => {
                   <span>Less Traveled</span>
                 </div>
               </div>
+            </div>
+            <div className="mt-8">
+              <img
+                src={timauImg}
+                alt="Mount Kenya Timau Route - northern plains view"
+                width={1600}
+                height={900}
+                loading="eager"
+                className="w-full h-80 object-cover rounded-lg shadow-lg"
+              />
             </div>
           </div>
         </section>

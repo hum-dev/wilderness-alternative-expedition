@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
+import rongaiImg from "@/assets/Rongai.jpg";
 import { ArrowLeft, Clock, MapPin, TrendingUp, Users } from "lucide-react";
 
 const Rongai = () => {
@@ -49,6 +50,9 @@ const Rongai = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="absolute inset-0 pointer-events-none -z-10">
+            <img src={rongaiImg} alt="Rongai Route" className="w-full h-full object-cover opacity-30" width={1600} height={900} loading="lazy" />
           </div>
         </section>
 

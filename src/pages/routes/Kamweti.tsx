@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Clock, MapPin, TrendingUp, TreePine, Eye } from "lucide-react";
+import kamwetiImg from "@/assets/Kamweti.jpg";
 
 const Kamweti = () => {
   return (
@@ -52,6 +53,16 @@ const Kamweti = () => {
                   <span>Rarely Used</span>
                 </div>
               </div>
+            </div>
+            <div className="mt-8">
+              <img
+                src={kamwetiImg}
+                alt="Mount Kenya Kamweti Route - bamboo forest trail"
+                width={1600}
+                height={900}
+                loading="eager"
+                className="w-full h-80 object-cover rounded-lg shadow-lg"
+              />
             </div>
           </div>
         </section>

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
+import maranguImg from "@/assets/marangu.jpg";
 import { ArrowLeft, Clock, MapPin, TrendingUp, Home } from "lucide-react";
 
 const Marangu = () => {
@@ -49,6 +50,9 @@ const Marangu = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="absolute inset-0 pointer-events-none -z-10">
+            <img src={maranguImg} alt="Marangu Route" className="w-full h-full object-cover opacity-30" width={1600} height={900} loading="lazy" />
           </div>
         </section>
 
