@@ -1,3 +1,10 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wilderness-expedition.com/sitemap.xml
+
+# Disallow any staging or admin paths if needed
+# Disallow: /admin/
 User-agent: Googlebot
 Allow: /
 

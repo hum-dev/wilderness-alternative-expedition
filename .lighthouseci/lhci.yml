@@ -1,0 +1,14 @@
+ci:
+  collect:
+    staticDistDir: ./dist
+    numberOfRuns: 1
+    url:
+      - https://wilderness-expedition.com/
+  assert:
+    assertions:
+      'categories:performance': offline
+      'categories:accessibility': warn
+      'categories:best-practices': warn
+      'categories:seo': warn
+  upload:
+    target: temporary-public-storage
