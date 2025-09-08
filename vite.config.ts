@@ -4,9 +4,11 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    server: {
+  base: './', // 👈 critical for cPanel/Apache hosting
+
+  server: {
     host: '0.0.0.0',
-    port: 5173 // or your preferred port
+    port: 5173,
   },
 
   plugins: [react()],
