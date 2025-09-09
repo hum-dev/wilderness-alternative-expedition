@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import olpejetaImg from "@/assets/olpejeta.jpg";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 const OlPejeta = () => {
   const conservationMilestones = [
@@ -239,7 +240,7 @@ const OlPejeta = () => {
                       Visiting Ol Pejeta means contributing to conservation while enjoying unforgettable wildlife encounters. Experience hope in action for endangered species.
                     </p>
                     <Button variant="adventure" size="lg">
-                      Book Your Ol Pejeta Conservation Safari
+                      <Link to="/contact">Book Your Ol Pejeta Conservation Safari</Link>  
                     </Button>
                   </CardContent>
                 </Card>

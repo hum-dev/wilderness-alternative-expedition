@@ -182,7 +182,7 @@ const Marangu = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button variant="adventure" size="lg">
-                    Book Marangu Route
+                    <Link to="/contact">Book Marangu Route</Link>
                   </Button>
                   <Button variant="outline" size="lg" asChild>
                     <Link to="/contact">Learn More</Link>

@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import meruImg from "@/assets/meru safari.jpeg";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 const Meru = () => {
   const activities = [
@@ -232,7 +233,7 @@ const Meru = () => {
                       Discover Kenya's untouched safari destination with rich wildlife, birdlife, and cultural heritage.
                     </p>
                     <Button variant="adventure" size="lg">
-                      Book Your Meru Safari Adventure
+                      <Link to="/contact">Book Your Meru Safari Adventure</Link>
                     </Button>
                   </CardContent>
                 </Card>

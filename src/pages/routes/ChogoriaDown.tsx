@@ -223,7 +223,7 @@ const ChogoriaDown = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button variant="adventure" size="lg">
-                    Book This Traverse
+                    <Link to="/contact">Book This Traverse</Link>
                   </Button>
                   <Button variant="outline" size="lg" asChild>
                     <Link to="/contact">Get Detailed Info</Link>

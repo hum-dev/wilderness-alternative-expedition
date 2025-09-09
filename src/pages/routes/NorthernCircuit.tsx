@@ -213,7 +213,7 @@ const NorthernCircuit = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button variant="adventure" size="lg">
-                    Book Northern Circuit
+                    <Link to="/contact">Book Northern Circuit</Link>
                   </Button>
                   <Button variant="outline" size="lg" asChild>
                     <Link to="/contact">Get Success Strategy</Link>

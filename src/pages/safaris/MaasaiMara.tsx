@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import maasaiImg from "@/assets/maasai mara.jpg";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 const MaasaiMara = () => {
   const bucketListExperiences = [
@@ -113,7 +114,7 @@ const MaasaiMara = () => {
                       Join us for an unforgettable safari adventure in Kenya's most iconic wildlife destination.
                     </p>
                     <Button variant="adventure" size="lg">
-                      Book Your Masai Mara Safari
+                      <Link to="/contact">Book Your Masai Mara Safari</Link>
                     </Button>
                   </CardContent>
                 </Card>

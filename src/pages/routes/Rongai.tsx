@@ -188,7 +188,7 @@ const Rongai = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button variant="adventure" size="lg">
-                    Book Rongai Route
+                    <Link to="/contact">Book Rongai Route</Link>
                   </Button>
                   <Button variant="outline" size="lg" asChild>
                     <Link to="/contact">Plan Your Adventure</Link>

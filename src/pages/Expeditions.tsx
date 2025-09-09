@@ -156,7 +156,7 @@ const Expeditions = () => {
             <div className="mt-20 text-center bg-gradient-adventure rounded-2xl p-12 text-white">
               <h3 className="text-3xl font-bold mb-4">Ready to Start Your Adventure?</h3>
               <p className="text-lg mb-8 text-white/90">
-                Contact us to plan your perfect expedition and create memories that will last a lifetime.
+               <Link to="/contact">Contact us to plan your perfect expedition and create memories that will last a lifetime.</Link>
               </p>
               <Button asChild variant="hero" size="lg">
                 <Link to="/contact">

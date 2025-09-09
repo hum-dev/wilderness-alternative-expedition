@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import amboseliImg from "@/assets/amboseli.jpg";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 const Amboseli = () => {
   const landscapes = [
@@ -293,7 +294,7 @@ const Amboseli = () => {
                       Experience Amboseli's unrivalled scenic opportunities with Kilimanjaro proximity and perfect photographic positioning.
                     </p>
                     <Button variant="adventure" size="lg">
-                      Book Your Amboseli Photography Safari
+                      <Link to="/contact">Book Your Amboseli Photography Safari</Link>
                     </Button>
                   </CardContent>
                 </Card>

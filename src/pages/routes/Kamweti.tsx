@@ -220,7 +220,7 @@ const Kamweti = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button variant="adventure" size="lg">
-                    Inquire About Kamweti
+                    <Link to="/contact">Inquire About Kamweti</Link>
                   </Button>
                   <Button variant="outline" size="lg" asChild>
                     <Link to="/contact">Custom Planning Required</Link>

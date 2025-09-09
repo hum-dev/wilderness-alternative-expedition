@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import samburuImg from "@/assets/Samburu.jpg";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 const Samburu = () => {
   const specialFive = [
@@ -154,7 +155,7 @@ const Samburu = () => {
                       Join us for an unforgettable adventure where you can feel the pulse of nature and the romance of Africa.
                     </p>
                     <Button variant="adventure" size="lg">
-                      Book Your Samburu Safari
+                      <Link to="/contact">Book Your Samburu Safari</Link> 
                     </Button>
                   </CardContent>
                 </Card>

@@ -178,7 +178,7 @@ const Timau = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button variant="adventure" size="lg">
-                    Book Timau Route
+                    <Link to="/contact">Book Timau Route</Link>
                   </Button>
                   <Button variant="outline" size="lg" asChild>
                     <Link to="/contact">Plan Your Trek</Link>

@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import nairobiImg from "@/assets/nairobi park.jpg";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 const NairobiPark = () => {
   const tourOptions = [
@@ -285,7 +286,7 @@ const NairobiPark = () => {
                     </p>
                     <div className="space-y-4">
                       <Button variant="adventure" size="lg">
-                        Book Your Nairobi Park Safari
+                       <Link to="/contact">Book Your Nairobi Park Safari</Link>
                       </Button>
                       <p className="text-sm text-muted-foreground">
                         Contact: info@wildernessalternativeexpedition.com | +254743789655
