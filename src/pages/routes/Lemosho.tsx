@@ -164,17 +164,17 @@ const Lemosho = () => {
                   <div className="grid md:grid-cols-3 gap-6">
                     <div className="text-center p-4 border rounded-lg">
                       <h3 className="font-bold text-lg mb-2">Solo Climber</h3>
-                      <p className="text-3xl font-bold text-primary mb-2">$2200</p>
+                      <p className="text-3xl font-bold text-primary mb-2">$900</p>
                       <p className="text-sm text-muted-foreground">USD per person</p>
                     </div>
                     <div className="text-center p-4 border rounded-lg bg-primary/5">
                       <h3 className="font-bold text-lg mb-2">Two Climbers</h3>
-                      <p className="text-3xl font-bold text-primary mb-2">$2000</p>
+                      <p className="text-3xl font-bold text-primary mb-2">$1800</p>
                       <p className="text-sm text-muted-foreground">USD per person</p>
                     </div>
                     <div className="text-center p-4 border rounded-lg">
                       <h3 className="font-bold text-lg mb-2">Group (5+)</h3>
-                      <p className="text-3xl font-bold text-primary mb-2">$1900</p>
+                      <p className="text-3xl font-bold text-primary mb-2">$1200</p>
                       <p className="text-sm text-muted-foreground">USD per person</p>
                     </div>
                   </div>

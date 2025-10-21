@@ -48,6 +48,12 @@ const Safaris = () => {
       image: nairobiCard,
       description: "Wildlife against a city skyline. The only national park within a capital city.",
       link: "/safaris/nairobi-park"
+    },
+        {
+      name: "Lake Turkana & Northern Kenya",
+      image: "https://images.unsplash.com/photo-1621414050345-53db43f7e7ab?w=800&h=600&fit=crop",
+      description: "Journey to Kenya's wild frontier—the Jade Sea, Samburu, Chalbi Desert, and humanity's birthplace.",
+      link: "/safaris/lake-turkana"
     }
   ];
 

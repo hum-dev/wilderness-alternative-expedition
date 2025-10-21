@@ -32,6 +32,7 @@ import Meru from "./pages/safaris/Meru";
 import Amboseli from "./pages/safaris/Amboseli";
 import OlPejeta from "./pages/safaris/OlPejeta";
 import NairobiPark from "./pages/safaris/NairobiPark";
+import LakeTurkana from "./pages/safaris/LakeTurkana";
 import NotFound from "./pages/NotFound";
 import Dashboard from "./pages/Dashboard";
 import { TripProvider } from "./contexts/TripContext";
@@ -71,6 +72,7 @@ const App = () => (
             <Route path="/safaris/amboseli" element={<Amboseli />} />
             <Route path="/safaris/ol-pejeta" element={<OlPejeta />} />
             <Route path="/safaris/nairobi-park" element={<NairobiPark />} />
+            <Route path="/safaris/lake-turkana" element={<LakeTurkana />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/contact" element={<Contact />} />

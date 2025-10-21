@@ -195,16 +195,16 @@ const ChogoriaDown = () => {
                   <div className="grid md:grid-cols-3 gap-4">
                     <div className="text-center p-4 bg-muted rounded-lg">
                       <h4 className="font-bold text-lg mb-2">Solo Trekker</h4>
-                      <p className="text-2xl font-bold text-primary">$805 USD</p>
+                      <p className="text-2xl font-bold text-primary">$900 USD</p>
                     </div>
                     <div className="text-center p-4 bg-muted rounded-lg">
                       <h4 className="font-bold text-lg mb-2">Double</h4>
-                      <p className="text-2xl font-bold text-primary">$770 USD</p>
+                      <p className="text-2xl font-bold text-primary">$853 USD</p>
                       <p className="text-sm text-muted-foreground">per person</p>
                     </div>
                     <div className="text-center p-4 bg-muted rounded-lg">
                       <h4 className="font-bold text-lg mb-2">Group (5+)</h4>
-                      <p className="text-2xl font-bold text-primary">$700 USD</p>
+                      <p className="text-2xl font-bold text-primary">$834 USD</p>
                       <p className="text-sm text-muted-foreground">per person</p>
                     </div>
                   </div>
